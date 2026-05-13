@@ -1,0 +1,85 @@
+/* Global Animations & Movement */
+
+/* Subtle slide up and fade in for page load */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    opacity: 0; /* Starts hidden */
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+
+/* Brutalist Jitter Effect for buttons/links on hover */
+@keyframes jitter {
+    0%, 100% { transform: translate(0, 0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(2px, -2px); }
+    60% { transform: translate(-2px, -2px); }
+    80% { transform: translate(2px, 2px); }
+}
+
+.hover-jitter:hover {
+    animation: jitter 0.3s infinite;
+}
+
+/* Floating background text effect */
+@keyframes floatText {
+    0%, 100% { transform: translateY(0) rotate(-12deg) scale(1.5); }
+    50% { transform: translateY(-15px) rotate(-10deg) scale(1.55); }
+}
+
+.animate-float-text {
+    animation: floatText 8s ease-in-out infinite;
+}
+
+/* Slow image panning for hero/about images */
+@keyframes panImage {
+    0% { transform: scale(1.05) translate(0, 0); }
+    50% { transform: scale(1.1) translate(-1%, -1%); }
+    100% { transform: scale(1.05) translate(0, 0); }
+}
+
+.animate-pan {
+    animation: panImage 25s ease-in-out infinite;
+}
+
+/* Subtle pulse for accents */
+@keyframes brutalPulse {
+    0%, 100% { opacity: 1; border-color: #2ECC71; }
+    50% { opacity: 0.8; border-color: #FFD700; box-shadow: 0 0 15px rgba(46, 204, 113, 0.5); }
+}
+
+.animate-brutal-pulse {
+    animation: brutalPulse 4s infinite;
+}
+
+/* Custom Scrollbar for Gigs List */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #1f1f1f;
+    border: 1px solid #353535;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #2ECC71;
+    border-radius: 0;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #FFD700;
+}

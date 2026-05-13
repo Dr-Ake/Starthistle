@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Starthistle | Home</title>
+    <!-- Google Fonts & Material Symbols -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "electric-gold": "#FFD700",
+                "acid-green": "#2ECC71",
+                "primary": "#dcb8ff", // purple
+                "primary-container": "#2e0e4d", // dark purple
+                "background": "#131313", // almost black
+                "surface": "#1f1f1f",
+                "surface-variant": "#353535",
+                "on-surface": "#e2e2e2",
+                "on-surface-variant": "#cdc3d0",
+                "deep-obsidian": "#0A0A0A",
+              },
+              fontFamily: {
+                "headline": ["Oswald", "sans-serif"],
+                "body": ["Verdana", "Helvetica", "sans-serif"],
+                "accent": ["Helvetica Black Oblique", "Verdana", "sans-serif"],
+              }
+            }
+          }
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css"/>
+    <style>
+        body { font-family: 'Verdana', 'Helvetica', sans-serif; }
+        h1, h2, h3, h4, h5, h6, .nav-link { font-family: 'Oswald', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        
+        /* Mobile Nav Toggle */
+        #mobile-menu { display: none; }
+        #mobile-menu.active { display: flex; }
+    </style>
+</head>
+<body class="bg-background text-on-surface antialiased min-h-screen flex flex-col">
+    <!-- TopNavBar Component -->
+    <nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-4 md:px-8 py-4 bg-background border-b-2 border-primary">
+        <div class="flex items-center gap-8">
+            <a href="index.html" class="font-headline text-2xl md:text-3xl font-bold text-electric-gold tracking-tight uppercase">StarThistle</a>
+            <div class="hidden md:flex items-center gap-6">
+                <a href="index.html" class="font-headline text-xl text-electric-gold border-b-2 border-electric-gold pb-1 px-2 uppercase">Home</a>
+                <a href="about.html" class="font-headline text-xl text-on-surface hover:text-electric-gold hover:bg-surface-variant transition-colors duration-100 px-2 py-1 uppercase">About</a>
+                <a href="merch.html" class="font-headline text-xl text-on-surface hover:text-electric-gold hover:bg-surface-variant transition-colors duration-100 px-2 py-1 uppercase">Merch</a>
+                <a href="gigs.html" class="font-headline text-xl text-on-surface hover:text-electric-gold hover:bg-surface-variant transition-colors duration-100 px-2 py-1 uppercase">Gig Dates</a>
+                <a href="contact.html" class="font-headline text-xl text-on-surface hover:text-electric-gold hover:bg-surface-variant transition-colors duration-100 px-2 py-1 uppercase">Contact</a>
+            </div>
+        </div>
+        <div class="flex items-center gap-4">
+            <div class="hidden md:flex gap-4">
+                <a href="https://www.facebook.com/starthistlenorcal" target="_blank" class="text-electric-gold hover:bg-surface-variant p-2 transition-colors duration-100">
+                    <span class="material-symbols-outlined">thumb_up</span>
+                </a>
+                <a href="https://www.instagram.com/starthistle_norcal/" target="_blank" class="text-electric-gold hover:bg-surface-variant p-2 transition-colors duration-100">
+                    <span class="material-symbols-outlined">photo_camera</span>
+                </a>
+            </div>
+            <button class="md:hidden text-electric-gold p-2" onclick="document.getElementById('mobile-menu').classList.toggle('active')">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed top-[74px] left-0 w-full bg-surface-variant flex-col items-center py-4 z-40 border-b-2 border-primary shadow-xl">
+        <a href="index.html" class="font-headline text-xl text-electric-gold py-3 uppercase w-full text-center border-b border-surface">Home</a>
+        <a href="about.html" class="font-headline text-xl text-on-surface py-3 uppercase w-full text-center border-b border-surface">About</a>
+        <a href="merch.html" class="font-headline text-xl text-on-surface py-3 uppercase w-full text-center border-b border-surface">Merch</a>
+        <a href="gigs.html" class="font-headline text-xl text-on-surface py-3 uppercase w-full text-center border-b border-surface">Gig Dates</a>
+        <a href="contact.html" class="font-headline text-xl text-on-surface py-3 uppercase w-full text-center border-b border-surface">Contact</a>
+        <div class="flex gap-6 mt-4">
+            <a href="https://www.facebook.com/starthistlenorcal" target="_blank" class="text-electric-gold"><span class="material-symbols-outlined text-3xl">thumb_up</span></a>
+            <a href="https://www.instagram.com/starthistle_norcal/" target="_blank" class="text-electric-gold"><span class="material-symbols-outlined text-3xl">photo_camera</span></a>
+        </div>
+    </div>
+
+    <!-- Main Canvas -->
+    <main class="flex-grow pt-32 pb-24 w-full max-w-[1600px] mx-auto px-4 md:px-8">
+        <!-- Hero Section -->
+        <section class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-24 animate-fade-in-up">
+            <div class="md:col-span-7 relative">
+                <div class="absolute inset-0 bg-primary-container translate-x-4 translate-y-4 border border-acid-green -z-10 animate-brutal-pulse"></div>
+                <!-- Placeholder for Hero Image/Logo -->
+                <div class="w-full h-auto min-h-[400px] md:min-h-[600px] bg-surface flex items-center justify-center border-2 border-primary overflow-hidden relative">
+                     <h1 class="text-6xl md:text-8xl font-headline text-electric-gold opacity-10 transform -rotate-12 absolute scale-150 animate-float-text">STARTHISTLE</h1>
+                     <img id="hero-image" src="" alt="StarThistle Band Performance" class="w-full h-full object-cover absolute inset-0 opacity-80 mix-blend-luminosity hover:mix-blend-normal transition-all duration-500 animate-pan">
+                </div>
+            </div>
+            
+            <div class="md:col-span-5 flex flex-col justify-end pt-12 md:pt-0 md:pl-8 animate-fade-in-up delay-100">
+                <h1 class="font-headline text-5xl md:text-7xl text-primary uppercase leading-none mb-8 tracking-tighter shadow-sm hover-jitter">
+                    Raw.<br/>Unfiltered.<br/><span class="text-electric-gold">StarThistle.</span>
+                </h1>
+                <div class="bg-primary-container p-6 border-l-4 border-electric-gold animate-fade-in-up delay-200">
+                    <p class="font-body text-lg text-on-surface mb-4 leading-relaxed">
+                        Forged in the dusty rehearsal spaces of Northern California, StarThistle revives the authoritative, gritty essence of 90s rock.
+                    </p>
+                    <a href="gigs.html" class="inline-block mt-4 bg-electric-gold text-background font-headline text-xl uppercase px-8 py-3 hover:bg-background hover:text-electric-gold border-2 border-electric-gold transition-none hover-jitter">
+                        See Upcoming Gigs
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Instagram Feed -->
+        <section class="mt-24 mb-12 animate-fade-in-up delay-300">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-8 border-b-4 border-primary pb-4">
+                <h2 class="font-headline text-4xl md:text-5xl text-electric-gold uppercase tracking-tight hover-jitter inline-block">Latest Visuals</h2>
+                <a href="https://www.instagram.com/starthistle_norcal/" target="_blank" class="font-body text-acid-green text-lg mt-4 md:mt-0 font-bold hover:text-electric-gold transition-colors">@starthistle_norcal</a>
+            </div>
+            <div class="bg-surface border-2 border-surface-variant p-4 md:p-8 shadow-[8px_8px_0_0_#dcb8ff]">
+                <behold-widget feed-id="PjqY2WzuGE8ViAo5djVb"></behold-widget>
+            </div>
+        </section>
+
+        <!-- Newsletter Subscription -->
+        <section class="bg-surface p-8 border-2 border-primary-container relative mt-12 mb-8 max-w-4xl mx-auto shadow-[8px_8px_0_0_#2e0e4d] animate-fade-in-up delay-300">
+            <h2 class="font-headline text-3xl text-acid-green uppercase mb-6 border-b-2 border-surface-variant pb-2">Join the Transmission</h2>
+            <p class="mb-6 text-on-surface-variant">Sign up for updates on gig dates, releases, and merch drops. Based in Redding, CA.</p>
+            <form class="flex flex-col sm:flex-row gap-4">
+                <input type="email" placeholder="YOUR EMAIL ADDRESS" required class="flex-grow bg-background border-2 border-surface-variant focus:border-electric-gold focus:ring-0 text-on-surface font-body py-3 px-4 transition-colors rounded-none outline-none"/>
+                <button type="button" class="bg-primary text-background font-headline text-xl uppercase px-8 py-3 border-2 border-primary hover:bg-background hover:text-primary transition-none" onclick="alert('Subscription feature coming soon!')">
+                    Subscribe
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Component -->
+    <footer class="w-full py-12 px-4 md:px-8 flex flex-col md:flex-row justify-between items-center gap-8 bg-deep-obsidian border-t-4 border-primary-container mt-auto">
+        <div class="flex flex-col gap-2 items-center md:items-start">
+            <span class="font-headline text-3xl text-primary uppercase">StarThistle</span>
+            <p class="font-body text-sm text-on-surface-variant">© 2025 StarThistle. Redding, CA.</p>
+        </div>
+        <div class="flex flex-wrap gap-6 items-center justify-center">
+            <a href="https://www.facebook.com/starthistlenorcal" class="font-headline text-lg text-on-surface-variant hover:text-acid-green transition-colors uppercase">Facebook</a>
+            <a href="https://www.instagram.com/starthistle_norcal/" class="font-headline text-lg text-on-surface-variant hover:text-acid-green transition-colors uppercase">Instagram</a>
+            <a href="contact.html" class="font-headline text-lg text-electric-gold hover:text-acid-green transition-colors uppercase">Contact</a>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (siteData && siteData.images && siteData.images.hero) {
+                const heroImg = document.getElementById('hero-image');
+                if (heroImg) heroImg.src = siteData.images.hero;
+            }
+        });
+    </script>
+    <script>
+      (() => {
+        const d=document,s=d.createElement("script");s.type="module";
+        s.src="https://w.behold.so/widget.js";d.head.append(s);
+      })();
+    </script>
+</body>
+</html>
