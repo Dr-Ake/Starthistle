@@ -4,7 +4,7 @@
 const siteData = {
   // Replace these links with paths to your actual images (e.g., "images/my-band.jpg")
   "images": {
-    "hero": "https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    "hero": "images/Main.jpeg",
     "about": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     "merchStickers": "https://images.unsplash.com/photo-1572375992501-4b0892d50c69?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
     "merchHats": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
