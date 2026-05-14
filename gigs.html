@@ -126,9 +126,15 @@
                             <span class="font-headline text-3xl text-primary">${gig.date}</span>
                             <span class="font-body text-sm text-on-surface-variant uppercase">${gig.time}</span>
                         </div>
-                        <div class="md:col-span-6 flex flex-col">
+                        <div class="md:col-span-3 flex flex-col">
                             <span class="font-headline text-2xl text-on-surface uppercase">${gig.venue}</span>
                             <span class="font-body text-lg text-on-surface-variant">${gig.location}</span>
+                        </div>
+                        <div class="md:col-span-3 flex items-center justify-center">
+                            ${(gig.memo && gig.memo.trim() !== "") ? 
+                                `<span class="font-body text-base text-acid-green italic text-center">${gig.memo}</span>` 
+                                : ''
+                            }
                         </div>
                         <div class="md:col-span-3 flex justify-end">
                             ${(!gig.ticketLink || gig.ticketLink === "") ? 

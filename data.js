@@ -13,22 +13,35 @@ const siteData = {
   },
   
   // Add, remove, or edit your gig dates below
+  // "memo" is optional — leave it as "" to keep that space blank,
+  // or add a short message like a promo code, special note, etc.
   "gigs": [
+	{
+      "date": "Jun 14",
+      "time": "Sunday • 12:00 - 4:00 PM",
+      "venue": "taste of Redding",
+      "location": "Redding, CA",
+      "memo": "Use code STAR for $5 off your ticket!",
+      "ticketLink": "https://www.eventbrite.com/e/taste-of-redding-2026-tickets-1984387536540?fbclid=IwY2xjawRy63VleHRuA2FlbQIxMABicmlkETFOWDJ0eFN4RDVZWW1zY1hEc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHl1DTTECVqSHQIdV4uVCaC2rg2jnNUCb-GRF9wIh-ucfZBDhxsTKI18bKB-d_aem_diC8-YqGljQieL9oc-4MNg",
+      "ticketText": "Get your ticket"
+    },
     {
       "date": "OCT 24",
       "time": "Thursday • 8:00 PM",
       "venue": "The Dip",
       "location": "Redding, CA",
+      "memo": "",
       "ticketLink": "",
-      "ticketText": "Free Entry"
+      "ticketText": "Come feel the nostalgia."
     },
     {
       "date": "NOV 12",
       "time": "Friday • 9:00 PM",
       "venue": "Silver Dollar Saloon",
       "location": "Chico, CA",
-      "ticketLink": "#",
-      "ticketText": "Tickets"
+      "memo": "",
+      "ticketLink": "",
+      "ticketText": "Come and enjoy."
     }
   ]
 };
