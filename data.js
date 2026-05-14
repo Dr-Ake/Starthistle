@@ -17,7 +17,7 @@ const siteData = {
   // or add a short message like a promo code, special note, etc.
   "gigs": [
 	{
-      "date": "Jun 14",
+      "date": "June 14",
       "time": "Sunday • 12:00 - 4:00 PM",
       "venue": "taste of Redding",
       "location": "Redding, CA",
@@ -26,22 +26,31 @@ const siteData = {
       "ticketText": "Get your ticket"
     },
     {
-      "date": "OCT 24",
-      "time": "Thursday • 8:00 PM",
-      "venue": "The Dip",
+      "date": "June 26",
+      "time": "Friday • 6:00 - 9:00 PM",
+      "venue": "The park, downtown Redding.",
       "location": "Redding, CA",
-      "memo": "",
+      "memo": "Food trucks!",
       "ticketLink": "",
       "ticketText": "Come feel the nostalgia."
     },
     {
-      "date": "NOV 12",
-      "time": "Friday • 9:00 PM",
-      "venue": "Silver Dollar Saloon",
-      "location": "Chico, CA",
-      "memo": "",
+      "date": "July 10",
+      "time": "Friday • 9:00 PM - 12:00 AM",
+      "venue": "The Silver Dollar Club",
+      "location": "Shasta Lake, CA",
+      "memo": "Free entry",
       "ticketLink": "",
       "ticketText": "Come and enjoy."
+    },
+	{
+      "date": "August 7",
+      "time": "Friday • 6:00 - 9:00 PM",
+      "venue": "The park, downtown Redding.",
+      "location": "Redding, CA",
+      "memo": "Food trucks!",
+      "ticketLink": "",
+      "ticketText": "You only live once, come hang!"
     }
   ]
 };
