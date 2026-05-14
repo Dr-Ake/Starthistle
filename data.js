@@ -19,14 +19,16 @@ const siteData = {
       "time": "Thursday • 8:00 PM",
       "venue": "The Dip",
       "location": "Redding, CA",
-      "ticketLink": "#"
+      "ticketLink": "",
+      "ticketText": "Free Entry"
     },
     {
       "date": "NOV 12",
       "time": "Friday • 9:00 PM",
       "venue": "Silver Dollar Saloon",
       "location": "Chico, CA",
-      "ticketLink": "#"
+      "ticketLink": "#",
+      "ticketText": "Tickets"
     }
   ]
 };
