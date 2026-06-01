@@ -6,16 +6,26 @@ const siteData = {
   "images": {
     "hero": "images/Main.jpeg",
     "about": "images/About.jpg",
-    "merchStickers": "https://images.unsplash.com/photo-1572375992501-4b0892d50c69?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-    "merchHats": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-    "merchTanks": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-    "merchTshirts": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+    "stickerStar": "images/sticker-star.jpg",
+    "stickerRetro": "images/sticker-retro.jpg",
+    "stickerClassic": "images/sticker-classic.jpg",
+    "hatTrucker": "images/hat-trucker.jpg",
+    "tshirtClassic": "images/tshirt-classic.jpg"
   },
   
   // Add, remove, or edit your gig dates below
   // "memo" is optional — leave it as "" to keep that space blank,
   // or add a short message like a promo code, special note, etc.
   "gigs": [
+  	{
+      "date": "June 6",
+      "time": "Sunday • 8:00 PM - 12:00 AM",
+      "venue": "Stage 7",
+      "location": "Anderson, CA",
+      "memo": "Beat the heat and rock with us!",
+      "ticketLink": "",
+      "ticketText": "Only $5 Cover"
+    },
 	{
       "date": "June 14",
       "time": "Sunday • 12:00 - 4:00 PM",

@@ -84,39 +84,29 @@
     <!-- Main Canvas -->
     <main class="flex-grow pt-32 pb-24 w-full max-w-[1600px] mx-auto px-4 md:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-            <!-- Contact Form -->
-            <div class="lg:col-span-7 bg-surface p-8 md:p-12 border-2 border-primary shadow-[8px_8px_0_0_#dcb8ff] animate-fade-in-up">
-                <h1 class="font-headline text-4xl md:text-5xl text-electric-gold uppercase mb-8 border-b-2 border-surface-variant pb-4 tracking-tight hover-jitter inline-block">Inquiries & Booking</h1>
+            <!-- Booking Card -->
+            <div class="lg:col-span-7 bg-surface p-8 md:p-12 border-2 border-primary shadow-[8px_8px_0_0_#dcb8ff] animate-fade-in-up flex flex-col justify-between">
+                <div>
+                    <h1 class="font-headline text-4xl md:text-5xl text-electric-gold uppercase mb-6 border-b-2 border-surface-variant pb-4 tracking-tight hover-jitter inline-block">Inquiries & Booking</h1>
+                    <p class="font-body text-lg text-on-surface-variant leading-relaxed mb-8">
+                        Looking to book StarThistle for a gig, venue, or event? Or just want to reach out directly? 
+                        Drop us an email using the button below, or copy our email address to get in touch.
+                    </p>
+                    
+                    <div class="bg-deep-obsidian p-6 border border-surface-variant mb-8 group hover:border-electric-gold transition-colors duration-300">
+                        <span class="font-headline text-sm text-primary uppercase tracking-widest block mb-2">Direct Mail Link</span>
+                        <div class="font-headline text-2xl md:text-3xl text-electric-gold break-all select-all font-bold cursor-text">
+                            starthistlenorcal@gmail.com
+                        </div>
+                    </div>
+                </div>
                 
-                <form class="space-y-8 mt-8" onsubmit="event.preventDefault(); alert('Not hooked up yet!');">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div class="flex flex-col">
-                            <label class="font-headline text-lg text-primary uppercase mb-2" for="first_name">First Name</label>
-                            <input class="bg-transparent border-0 border-b-2 border-surface-variant focus:border-electric-gold focus:ring-0 text-on-surface font-body py-2 px-0 transition-colors rounded-none" id="first_name" name="first_name" required type="text"/>
-                        </div>
-                        <div class="flex flex-col">
-                            <label class="font-headline text-lg text-primary uppercase mb-2" for="last_name">Last Name</label>
-                            <input class="bg-transparent border-0 border-b-2 border-surface-variant focus:border-electric-gold focus:ring-0 text-on-surface font-body py-2 px-0 transition-colors rounded-none" id="last_name" name="last_name" required type="text"/>
-                        </div>
-                    </div>
-                    <div class="flex flex-col">
-                        <label class="font-headline text-lg text-primary uppercase mb-2" for="phone">Phone Number</label>
-                        <input class="bg-transparent border-0 border-b-2 border-surface-variant focus:border-electric-gold focus:ring-0 text-on-surface font-body py-2 px-0 transition-colors rounded-none" id="phone" name="phone" type="tel"/>
-                    </div>
-                    <div class="flex flex-col">
-                        <label class="font-headline text-lg text-primary uppercase mb-2" for="email">Email Address</label>
-                        <input class="bg-transparent border-0 border-b-2 border-surface-variant focus:border-electric-gold focus:ring-0 text-on-surface font-body py-2 px-0 transition-colors rounded-none" id="email" name="email" required type="email"/>
-                    </div>
-                    <div class="flex flex-col">
-                        <label class="font-headline text-lg text-primary uppercase mb-2" for="message">Message</label>
-                        <textarea class="bg-transparent border-0 border-b-2 border-surface-variant focus:border-electric-gold focus:ring-0 text-on-surface font-body py-2 px-0 transition-colors rounded-none min-h-[100px]" id="message" name="message" required></textarea>
-                    </div>
-                    <div class="pt-6">
-                        <button class="w-full bg-electric-gold text-background font-headline text-xl uppercase px-12 py-4 border-2 border-electric-gold hover:bg-background hover:text-electric-gold transition-none" type="submit">
-                            Transmit Signal
-                        </button>
-                    </div>
-                </form>
+                <div>
+                    <a href="mailto:starthistlenorcal@gmail.com" class="inline-flex w-full items-center justify-center gap-3 bg-electric-gold text-background font-headline text-xl uppercase px-12 py-4 border-2 border-electric-gold hover:bg-background hover:text-electric-gold transition-all duration-200 hover-jitter">
+                        <span>Send An Email</span>
+                        <span class="material-symbols-outlined">send</span>
+                    </a>
+                </div>
             </div>
             
             <!-- Social Links & Info -->

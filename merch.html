@@ -87,71 +87,122 @@
             <p class="font-body text-acid-green text-lg mt-4 md:mt-0 font-bold animate-brutal-pulse">Support the Noise.</p>
         </div>
         
-        <!-- How to Buy Alert -->
-        <div class="bg-primary-container border-l-4 border-electric-gold p-6 mb-12 max-w-3xl animate-fade-in-up delay-100">
-            <h2 class="font-headline text-2xl text-electric-gold uppercase mb-2">How to Purchase</h2>
-            <p class="font-body text-on-surface mb-2">
-                For now, grab your gear by tipping or sending payment directly to our Venmo/CashApp.
-            </p>
-            <p class="font-body text-primary font-bold">
-                Please include the item(s) and size(s) in the payment notes, or contact us to coordinate pickup/shipping!
-            </p>
-            <div class="mt-4 flex flex-wrap gap-4">
-                <span class="bg-surface text-acid-green px-4 py-2 font-headline uppercase border border-acid-green hover-jitter cursor-pointer">Venmo: @StarThistleBand</span>
-                <span class="bg-surface text-acid-green px-4 py-2 font-headline uppercase border border-acid-green hover-jitter cursor-pointer">CashApp: $StarThistle</span>
+        <!-- Live Gig Banner -->
+        <div class="relative bg-primary-container border-2 border-primary p-8 mb-12 max-w-4xl shadow-[8px_8px_0_0_#dcb8ff] overflow-hidden group animate-fade-in-up delay-100">
+            <div class="absolute inset-0 bg-gradient-to-r from-primary-container via-surface to-deep-obsidian opacity-50 z-0"></div>
+            <div class="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                <div>
+                    <h2 class="font-headline text-3xl md:text-4xl text-electric-gold uppercase mb-2 tracking-wide">
+                        Available Exclusively at Our Gigs
+                    </h2>
+                    <p class="font-body text-base text-on-surface-variant max-w-2xl leading-relaxed">
+                        Like what you see? All of our official gear and merchandise is sold <strong class="text-white">exclusively in person at our live shows</strong>. 
+                        Come out to support the noise, hang with the band, and grab some fresh gear directly from the source!
+                    </p>
+                </div>
+                <div class="shrink-0">
+                    <a href="gigs.html" class="inline-flex items-center gap-2 bg-electric-gold text-background font-headline text-xl uppercase px-6 py-3 border-2 border-electric-gold hover:bg-background hover:text-electric-gold transition-all duration-200 hover-jitter">
+                        <span>Find A Show</span>
+                        <span class="material-symbols-outlined">event</span>
+                    </a>
+                </div>
             </div>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 animate-fade-in-up delay-200">
-            <!-- Stickers -->
-            <div class="bg-surface border-2 border-surface-variant p-6 hover:border-electric-gold transition-colors group">
-                <div class="w-full aspect-square bg-deep-obsidian mb-6 flex items-center justify-center overflow-hidden border border-surface-variant group-hover:border-electric-gold relative">
-                    <span class="material-symbols-outlined text-[100px] text-surface-variant group-hover:text-electric-gold transition-colors absolute z-0">sticky_note_2</span>
-                    <img id="merch-stickers" src="" class="w-full h-full object-cover relative z-10" alt="Stickers">
+            <!-- Star-Cut Logo Sticker -->
+            <div class="bg-surface border-2 border-surface-variant p-6 hover:border-electric-gold transition-all duration-300 group flex flex-col justify-between">
+                <div>
+                    <div class="w-full aspect-square bg-deep-obsidian mb-6 flex items-center justify-center overflow-hidden border border-surface-variant group-hover:border-electric-gold relative">
+                        <span class="material-symbols-outlined text-[100px] text-surface-variant group-hover:text-electric-gold transition-colors absolute z-0">sticky_note_2</span>
+                        <img id="merch-sticker-star" src="images/sticker-star.jpg" class="w-full h-full object-cover relative z-10 group-hover:scale-105 transition-transform duration-500" alt="Star-Cut Logo Sticker">
+                        <span class="absolute top-3 right-3 bg-electric-gold text-background px-3 py-1 font-headline text-sm uppercase tracking-wider font-bold z-20">Star-Cut</span>
+                    </div>
+                    <h3 class="font-headline text-2xl text-on-surface uppercase mb-2">Star-Cut Logo Sticker</h3>
+                    <p class="font-body text-sm text-on-surface-variant leading-relaxed mb-4">
+                        A sleek, die-cut star sticker featuring the StarThistle emblem. Built from thick, weather-resistant vinyl—perfect for your car, notebook, or flight case.
+                    </p>
                 </div>
-                <h3 class="font-headline text-2xl text-on-surface uppercase mb-4">Official Stickers</h3>
-                <ul class="space-y-3 font-body text-lg text-on-surface-variant">
-                    <li class="flex justify-between border-b border-surface-variant pb-1"><span>Small</span> <span class="text-electric-gold font-bold">$2</span></li>
-                    <li class="flex justify-between border-b border-surface-variant pb-1"><span>Medium</span> <span class="text-electric-gold font-bold">$5</span></li>
-                    <li class="flex justify-between border-b border-surface-variant pb-1"><span>Large</span> <span class="text-electric-gold font-bold">$7</span></li>
-                </ul>
+                <div class="pt-4 border-t border-surface-variant flex items-center justify-between">
+                    <span class="font-headline text-sm uppercase text-electric-gold tracking-widest">Get it live</span>
+                    <span class="material-symbols-outlined text-electric-gold">local_activity</span>
+                </div>
             </div>
 
-            <!-- Hats -->
-            <div class="bg-surface border-2 border-surface-variant p-6 hover:border-primary transition-colors group">
-                <div class="w-full aspect-square bg-deep-obsidian mb-6 flex items-center justify-center overflow-hidden border border-surface-variant group-hover:border-primary relative">
-                    <span class="material-symbols-outlined text-[100px] text-surface-variant group-hover:text-primary transition-colors absolute z-0">apparel</span>
-                    <img id="merch-hats" src="" class="w-full h-full object-cover relative z-10" alt="Hats">
+            <!-- Retro Neon Sticker -->
+            <div class="bg-surface border-2 border-surface-variant p-6 hover:border-primary transition-all duration-300 group flex flex-col justify-between">
+                <div>
+                    <div class="w-full aspect-square bg-deep-obsidian mb-6 flex items-center justify-center overflow-hidden border border-surface-variant group-hover:border-primary relative">
+                        <span class="material-symbols-outlined text-[100px] text-surface-variant group-hover:text-primary transition-colors absolute z-0">sticky_note_2</span>
+                        <img id="merch-sticker-retro" src="images/sticker-retro.jpg" class="w-full h-full object-cover relative z-10 group-hover:scale-105 transition-transform duration-500" alt="Retro Neon Sticker">
+                        <span class="absolute top-3 right-3 bg-primary text-background px-3 py-1 font-headline text-sm uppercase tracking-wider font-bold z-20">Retro</span>
+                    </div>
+                    <h3 class="font-headline text-2xl text-on-surface uppercase mb-2">Retro Neon Sticker</h3>
+                    <p class="font-body text-sm text-on-surface-variant leading-relaxed mb-4">
+                        Square vinyl sticker featuring our vibrant, 90s-inspired purple-and-blue gradient thistle design. Thick, durable, and ready to customize your guitar case.
+                    </p>
                 </div>
-                <h3 class="font-headline text-2xl text-on-surface uppercase mb-4">StarThistle Hats</h3>
-                <ul class="space-y-3 font-body text-lg text-on-surface-variant">
-                    <li class="flex justify-between border-b border-surface-variant pb-1"><span>One Size Fits All</span> <span class="text-primary font-bold">$20</span></li>
-                </ul>
+                <div class="pt-4 border-t border-surface-variant flex items-center justify-between">
+                    <span class="font-headline text-sm uppercase text-primary tracking-widest">Get it live</span>
+                    <span class="material-symbols-outlined text-primary">local_activity</span>
+                </div>
             </div>
 
-            <!-- Tanks -->
-            <div class="bg-surface border-2 border-surface-variant p-6 hover:border-acid-green transition-colors group">
-                <div class="w-full aspect-square bg-deep-obsidian mb-6 flex items-center justify-center overflow-hidden border border-surface-variant group-hover:border-acid-green relative">
-                    <span class="material-symbols-outlined text-[100px] text-surface-variant group-hover:text-acid-green transition-colors absolute z-0">styler</span>
-                    <img id="merch-tanks" src="" class="w-full h-full object-cover relative z-10" alt="Women's Tanks">
+            <!-- Classic Circle Sticker -->
+            <div class="bg-surface border-2 border-surface-variant p-6 hover:border-acid-green transition-all duration-300 group flex flex-col justify-between">
+                <div>
+                    <div class="w-full aspect-square bg-deep-obsidian mb-6 flex items-center justify-center overflow-hidden border border-surface-variant group-hover:border-acid-green relative">
+                        <span class="material-symbols-outlined text-[100px] text-surface-variant group-hover:text-acid-green transition-colors absolute z-0">sticky_note_2</span>
+                        <img id="merch-sticker-classic" src="images/sticker-classic.jpg" class="w-full h-full object-cover relative z-10 group-hover:scale-105 transition-transform duration-500" alt="Classic Circle Sticker">
+                        <span class="absolute top-3 right-3 bg-acid-green text-background px-3 py-1 font-headline text-sm uppercase tracking-wider font-bold z-20">Classic</span>
+                    </div>
+                    <h3 class="font-headline text-2xl text-on-surface uppercase mb-2">Classic Circle Sticker</h3>
+                    <p class="font-body text-sm text-on-surface-variant leading-relaxed mb-4">
+                        The traditional circular StarThistle emblem print. Perfectly sized for headstocks, backplates, amplifiers, or mic stands.
+                    </p>
                 </div>
-                <h3 class="font-headline text-2xl text-on-surface uppercase mb-4">Women's White Tanks</h3>
-                <p class="font-body text-sm text-on-surface-variant mb-4">Logo on front left.</p>
-                <ul class="space-y-3 font-body text-lg text-on-surface-variant">
-                    <li class="flex justify-between border-b border-surface-variant pb-1"><span>All Sizes</span> <span class="text-acid-green font-bold">$25</span></li>
-                </ul>
+                <div class="pt-4 border-t border-surface-variant flex items-center justify-between">
+                    <span class="font-headline text-sm uppercase text-acid-green tracking-widest">Get it live</span>
+                    <span class="material-symbols-outlined text-acid-green">local_activity</span>
+                </div>
             </div>
 
-            <!-- Tshirts -->
-            <div class="bg-surface border-2 border-surface-variant p-6 hover:border-electric-gold transition-colors group">
-                <div class="w-full aspect-square bg-deep-obsidian mb-6 flex items-center justify-center overflow-hidden border border-surface-variant group-hover:border-electric-gold relative">
-                    <span class="material-symbols-outlined text-[100px] text-surface-variant group-hover:text-electric-gold transition-colors absolute z-0">checkroom</span>
-                    <img id="merch-tshirts" src="" class="w-full h-full object-cover relative z-10" alt="T-Shirts">
+            <!-- Classic Logo Trucker Hat -->
+            <div class="bg-surface border-2 border-surface-variant p-6 hover:border-primary transition-all duration-300 group flex flex-col justify-between">
+                <div>
+                    <div class="w-full aspect-square bg-deep-obsidian mb-6 flex items-center justify-center overflow-hidden border border-surface-variant group-hover:border-primary relative">
+                        <span class="material-symbols-outlined text-[100px] text-surface-variant group-hover:text-primary transition-colors absolute z-0">apparel</span>
+                        <img id="merch-hat-trucker" src="images/hat-trucker.jpg" class="w-full h-full object-cover relative z-10 group-hover:scale-105 transition-transform duration-500" alt="Classic Logo Trucker Hat">
+                        <span class="absolute top-3 right-3 bg-primary text-background px-3 py-1 font-headline text-sm uppercase tracking-wider font-bold z-20">Headwear</span>
+                    </div>
+                    <h3 class="font-headline text-2xl text-on-surface uppercase mb-2">Classic Logo Trucker Hat</h3>
+                    <p class="font-body text-sm text-on-surface-variant leading-relaxed mb-4">
+                        Premium, high-crown white and black mesh snapback trucker hat. Features our circular StarThistle thistle emblem on the front. One size fits all.
+                    </p>
                 </div>
-                <h3 class="font-headline text-2xl text-on-surface uppercase mb-4">White T-Shirts</h3>
-                <ul class="space-y-3 font-body text-lg text-on-surface-variant">
-                    <li class="flex justify-between border-b border-surface-variant pb-1"><span>All Sizes</span> <span class="text-electric-gold font-bold">$20</span></li>
-                </ul>
+                <div class="pt-4 border-t border-surface-variant flex items-center justify-between">
+                    <span class="font-headline text-sm uppercase text-primary tracking-widest">Get it live</span>
+                    <span class="material-symbols-outlined text-primary">local_activity</span>
+                </div>
+            </div>
+
+            <!-- Classic Logo T-Shirt -->
+            <div class="bg-surface border-2 border-surface-variant p-6 hover:border-electric-gold transition-all duration-300 group flex flex-col justify-between">
+                <div>
+                    <div class="w-full aspect-square bg-deep-obsidian mb-6 flex items-center justify-center overflow-hidden border border-surface-variant group-hover:border-electric-gold relative">
+                        <span class="material-symbols-outlined text-[100px] text-surface-variant group-hover:text-electric-gold transition-colors absolute z-0">checkroom</span>
+                        <img id="merch-tshirt-classic" src="images/tshirt-classic.jpg" class="w-full h-full object-cover relative z-10 group-hover:scale-105 transition-transform duration-500" alt="Classic Logo T-Shirt">
+                        <span class="absolute top-3 right-3 bg-electric-gold text-background px-3 py-1 font-headline text-sm uppercase tracking-wider font-bold z-20">Apparel</span>
+                    </div>
+                    <h3 class="font-headline text-2xl text-on-surface uppercase mb-2">Classic Logo T-Shirt</h3>
+                    <p class="font-body text-sm text-on-surface-variant leading-relaxed mb-4">
+                        Heavyweight white cotton crewneck tee featuring the large brown StarThistle thistle circular emblem printed on the back. Classic fit, available in all sizes.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-surface-variant flex items-center justify-between">
+                    <span class="font-headline text-sm uppercase text-electric-gold tracking-widest">Get it live</span>
+                    <span class="material-symbols-outlined text-electric-gold">local_activity</span>
+                </div>
             </div>
         </div>
     </main>
@@ -174,10 +225,11 @@
         document.addEventListener('DOMContentLoaded', () => {
             if (siteData && siteData.images) {
                 const mappings = {
-                    'merch-stickers': siteData.images.merchStickers,
-                    'merch-hats': siteData.images.merchHats,
-                    'merch-tanks': siteData.images.merchTanks,
-                    'merch-tshirts': siteData.images.merchTshirts
+                    'merch-sticker-star': siteData.images.stickerStar,
+                    'merch-sticker-retro': siteData.images.stickerRetro,
+                    'merch-sticker-classic': siteData.images.stickerClassic,
+                    'merch-hat-trucker': siteData.images.hatTrucker,
+                    'merch-tshirt-classic': siteData.images.tshirtClassic
                 };
                 for (const [id, url] of Object.entries(mappings)) {
                     const imgEl = document.getElementById(id);
