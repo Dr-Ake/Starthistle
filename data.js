@@ -21,7 +21,7 @@ const siteData = {
       "date": "June 6",
       "time": "Sunday • 8:00 PM - 12:00 AM",
       "venue": "Stage 7",
-      "location": "Anderson, CA",
+      "location": "The VFW Hall. Anderson, CA",
       "memo": "Beat the heat and rock with us!",
       "ticketLink": "",
       "ticketText": "Only $5 Cover"
