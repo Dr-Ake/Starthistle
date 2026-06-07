@@ -17,15 +17,6 @@ const siteData = {
   // "memo" is optional — leave it as "" to keep that space blank,
   // or add a short message like a promo code, special note, etc.
   "gigs": [
-  	{
-      "date": "June 6",
-      "time": "Sunday • 8:00 PM - 12:00 AM",
-      "venue": "Stage 7",
-      "location": "The VFW Hall. Anderson, CA",
-      "memo": "Beat the heat and rock with us!",
-      "ticketLink": "",
-      "ticketText": "Only $5 Cover"
-    },
 	{
       "date": "June 14",
       "time": "Sunday • 12:00 - 4:00 PM",
