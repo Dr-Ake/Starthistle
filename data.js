@@ -17,15 +17,6 @@ const siteData = {
   // "memo" is optional — leave it as "" to keep that space blank,
   // or add a short message like a promo code, special note, etc.
   "gigs": [
-	{
-      "date": "June 14",
-      "time": "Sunday • 12:00 - 4:00 PM",
-      "venue": "taste of Redding",
-      "location": "Redding, CA",
-      "memo": "Use code STAR for $5 off your ticket!",
-      "ticketLink": "https://www.eventbrite.com/e/taste-of-redding-2026-tickets-1984387536540?fbclid=IwY2xjawRy63VleHRuA2FlbQIxMABicmlkETFOWDJ0eFN4RDVZWW1zY1hEc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHl1DTTECVqSHQIdV4uVCaC2rg2jnNUCb-GRF9wIh-ucfZBDhxsTKI18bKB-d_aem_diC8-YqGljQieL9oc-4MNg",
-      "ticketText": "Get your ticket"
-    },
     {
       "date": "June 26",
       "time": "Friday • 6:00 - 9:00 PM",
@@ -52,6 +43,15 @@ const siteData = {
       "memo": "Food trucks!",
       "ticketLink": "",
       "ticketText": "You only live once, come hang!"
+    },
+	{
+      "date": "September 19th",
+      "time": "Saturday • 9:00 PM - 1:00 AM",
+      "venue": "Firehouse Lounge",
+      "location": "Anderson, CA",
+      "memo": "",
+      "ticketLink": "",
+      "ticketText": "Come make some noise with us"
     }
   ]
 };
