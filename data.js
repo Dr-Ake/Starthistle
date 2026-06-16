@@ -12,7 +12,7 @@ const siteData = {
     "hatTrucker": "images/hat-trucker.jpg",
     "tshirtClassic": "images/tshirt-classic.jpg"
   },
-  
+
   // Add, remove, or edit your gig dates below
   // "memo" is optional — leave it as "" to keep that space blank,
   // or add a short message like a promo code, special note, etc.
@@ -35,7 +35,7 @@ const siteData = {
       "ticketLink": "",
       "ticketText": "Come and enjoy."
     },
-	{
+    {
       "date": "August 7",
       "time": "Friday • 6:00 - 9:00 PM",
       "venue": "The park, downtown Redding.",
@@ -44,12 +44,12 @@ const siteData = {
       "ticketLink": "",
       "ticketText": "You only live once, come hang!"
     },
-	{
+    {
       "date": "September 19th",
       "time": "Saturday • 9:00 PM - 1:00 AM",
       "venue": "Firehouse Lounge",
       "location": "Anderson, CA",
-      "memo": "",
+      "memo": "Live music, food and drinks!",
       "ticketLink": "",
       "ticketText": "Come make some noise with us"
     }
