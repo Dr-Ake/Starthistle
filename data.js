@@ -18,15 +18,6 @@ const siteData = {
   // or add a short message like a promo code, special note, etc.
   "gigs": [
     {
-      "date": "June 26",
-      "time": "Friday • 6:00 - 9:00 PM",
-      "venue": "The park, downtown Redding.",
-      "location": "Redding, CA",
-      "memo": "Food trucks!",
-      "ticketLink": "",
-      "ticketText": "Come feel the nostalgia."
-    },
-    {
       "date": "July 10",
       "time": "Friday • 9:00 PM - 12:00 AM",
       "venue": "The Silver Dollar Club",
