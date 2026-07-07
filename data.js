@@ -19,30 +19,39 @@ const siteData = {
   "gigs": [
     {
       "date": "July 10",
-      "time": "Friday • 9:00 PM - 12:00 AM",
-      "venue": "The Silver Dollar Club",
-      "location": "Shasta Lake, CA",
-      "memo": "Free entry",
+      "time": "9pm-12am",
+      "venue": "Silver $ Club",
+      "location": "Shasta Lake",
+      "memo": "Pure sonic assault.",
       "ticketLink": "",
-      "ticketText": "Come and enjoy."
+      "ticketText": "Come Make Some Noise"
     },
     {
       "date": "August 7",
-      "time": "Friday • 6:00 - 9:00 PM",
-      "venue": "The park, downtown Redding.",
-      "location": "Redding, CA",
-      "memo": "Food trucks!",
+      "time": "6pm-9:30pm",
+      "venue": "The Park",
+      "location": "Redding",
+      "memo": "Rocking the park under the stars!",
       "ticketLink": "",
-      "ticketText": "You only live once, come hang!"
+      "ticketText": "Join the Party!"
     },
     {
-      "date": "September 19th",
-      "time": "Saturday • 9:00 PM - 1:00 AM",
-      "venue": "Firehouse Lounge",
-      "location": "Anderson, CA",
-      "memo": "Live music, food and drinks!",
+      "date": "Sept 11",
+      "time": "8pm-12am",
+      "venue": "Legion Hall",
+      "location": "Shasta Lake City",
+      "memo": "**$5 entry, 21+ only. Get ready to rock!",
       "ticketLink": "",
-      "ticketText": "Come make some noise with us"
+      "ticketText": "$5 Entry"
+    },
+    {
+      "date": "Sept 19",
+      "time": "9pm-1am",
+      "venue": "FireHouse Lounge",
+      "location": "Anderson",
+      "memo": "*21+ only. Let's bring the heat!",
+      "ticketLink": "",
+      "ticketText": "It's a Firehouse after all"
     }
   ]
 };
