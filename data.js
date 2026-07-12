@@ -18,15 +18,6 @@ const siteData = {
   // or add a short message like a promo code, special note, etc.
   "gigs": [
     {
-      "date": "July 10",
-      "time": "9pm-12am",
-      "venue": "Silver $ Club",
-      "location": "Shasta Lake",
-      "memo": "Pure sonic assault.",
-      "ticketLink": "",
-      "ticketText": "Come Make Some Noise"
-    },
-    {
       "date": "August 7",
       "time": "6pm-9:30pm",
       "venue": "The Park",
