@@ -84,7 +84,7 @@
     <main class="flex-grow pt-32 pb-24 w-full max-w-[1200px] mx-auto px-4 md:px-8 animate-fade-in-up">
         <h1 class="font-headline text-5xl md:text-7xl text-electric-gold uppercase mb-12 tracking-tight border-b-4 border-primary pb-4 inline-block hover-jitter">Tour Dates</h1>
         
-        <div class="bg-surface border-2 border-surface-variant p-8 md:p-12 shadow-[8px_8px_0_0_#2ECC71] animate-fade-in-up delay-100">
+        <div class="bg-surface border-2 border-surface-variant p-8 md:p-12 shadow-[8px_8px_0_0_#2ECC71] animate-fade-in-up delay-100 relative">
             <p class="font-body text-xl text-on-surface mb-8 italic text-center text-on-surface-variant animate-brutal-pulse">
                 "We don't just play shows. We launch sonic assaults."
             </p>
@@ -92,6 +92,11 @@
             <!-- Gigs List -->
             <div id="gigs-list" class="space-y-6 max-h-[600px] overflow-y-auto pr-2 custom-scrollbar">
                 <!-- Gigs will be injected here by Javascript -->
+            </div>
+
+            <!-- Scroll Indicator Arrow -->
+            <div id="scroll-arrow" class="hidden absolute bottom-2 right-4 text-acid-green animate-bounce pointer-events-none">
+                <span class="material-symbols-outlined text-4xl">keyboard_double_arrow_down</span>
             </div>
         </div>
     </main>
@@ -147,6 +152,25 @@
                     `;
                     gigsList.insertAdjacentHTML('beforeend', gigHtml);
                 });
+
+                const scrollArrow = document.getElementById('scroll-arrow');
+                
+                const checkScroll = () => {
+                    if (gigsList.scrollHeight > gigsList.clientHeight) {
+                        if (Math.ceil(gigsList.scrollTop + gigsList.clientHeight) >= gigsList.scrollHeight - 5) {
+                            scrollArrow.classList.add('hidden');
+                        } else {
+                            scrollArrow.classList.remove('hidden');
+                        }
+                    } else {
+                        scrollArrow.classList.add('hidden');
+                    }
+                };
+
+                setTimeout(checkScroll, 100);
+                
+                gigsList.addEventListener('scroll', checkScroll);
+                window.addEventListener('resize', checkScroll);
             }
         });
     </script>
