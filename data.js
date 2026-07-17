@@ -19,12 +19,21 @@ const siteData = {
   "gigs": [
     {
       "date": "July 31",
-      "time": "8:30pm-12am",
+      "time": "8pm-12am",
       "venue": "Legion Hall",
       "location": "4309 Vallecito St, Shasta Lake City",
       "memo": "**$5 entry fee at the door, 21+ only.",
       "ticketLink": "",
       "ticketText": "Don't be a stranger, come on out"
+    },
+    {
+      "date": "August 1",
+      "time": "7pm-10pm",
+      "venue": "Lakeshore Inn Resort",
+      "location": "20483 Lakeshore Dr, Lakehead",
+      "memo": "",
+      "ticketLink": "",
+      "ticketText": "See you there!"
     },
     {
       "date": "August 7",
@@ -52,6 +61,15 @@ const siteData = {
       "memo": "*21+ only. Let's bring the heat!",
       "ticketLink": "",
       "ticketText": "It's a Firehouse after all"
+    },
+    {
+      "date": "Oct 9",
+      "time": "8pm-12am",
+      "venue": "Legion Hall",
+      "location": "Shasta Lake City",
+      "memo": "**$5 entry 21 &over",
+      "ticketLink": "",
+      "ticketText": "Don't be a stranger, come on out"
     }
   ]
 };
