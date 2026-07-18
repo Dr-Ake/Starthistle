@@ -27,7 +27,7 @@ const siteData = {
       "ticketText": "Don't be a stranger, come on out"
     },
     {
-      "date": "August 1",
+      "date": "August 22",
       "time": "7pm-10pm",
       "venue": "Lakeshore Inn Resort",
       "location": "20483 Lakeshore Dr, Lakehead",
