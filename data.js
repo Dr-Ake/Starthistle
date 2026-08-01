@@ -18,15 +18,6 @@ const siteData = {
   // or add a short message like a promo code, special note, etc.
   "gigs": [
     {
-      "date": "August 22",
-      "time": "7pm-10pm",
-      "venue": "Lakeshore Inn Resort",
-      "location": "20483 Lakeshore Dr, Lakehead",
-      "memo": "",
-      "ticketLink": "",
-      "ticketText": "See you there!"
-    },
-    {
       "date": "August 7",
       "time": "6pm-9:30pm",
       "venue": "The Park",
@@ -34,6 +25,15 @@ const siteData = {
       "memo": "Rocking the park under the stars!",
       "ticketLink": "",
       "ticketText": "Join the Party!"
+    },
+    {
+      "date": "August 22",
+      "time": "7pm-10pm",
+      "venue": "Lakeshore Inn Resort",
+      "location": "20483 Lakeshore Dr, Lakehead",
+      "memo": "",
+      "ticketLink": "",
+      "ticketText": "See you there!"
     },
     {
       "date": "Sept 11",
