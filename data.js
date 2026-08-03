@@ -18,7 +18,7 @@ const siteData = {
   // or add a short message like a promo code, special note, etc.
   "gigs": [
     {
-      "date": "August 7",
+      "date": "August 21",
       "time": "6pm-9:30pm",
       "venue": "The Park",
       "location": "Redding",
