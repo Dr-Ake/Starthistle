@@ -45,6 +45,15 @@ const siteData = {
       "ticketText": "See you there!"
     },
     {
+      "date": "Sept 4",
+      "time": "9:30pm-1:30am",
+      "venue": "Overtime Sports Bar",
+      "location": "Win River Casino",
+      "memo": "",
+      "ticketLink": "",
+      "ticketText": "See you there!"
+    },
+    {
       "date": "Sept 11",
       "time": "8pm-12am",
       "venue": "Legion Hall",
