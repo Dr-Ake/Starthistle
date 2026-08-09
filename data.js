@@ -18,15 +18,6 @@ const siteData = {
   // or add a short message like a promo code, special note, etc.
   "gigs": [
     {
-      "date": "August 8",
-      "time": "9pm-1am",
-      "venue": "Palomino Room",
-      "location": "723 Main St, Red Bluff",
-      "memo": "Red Bluff, we missed you. Come get your 90's rock on!",
-      "ticketLink": "",
-      "ticketText": "See you there!"
-    },
-    {
       "date": "August 21",
       "time": "6pm-9:30pm",
       "venue": "The Park",
