@@ -24,7 +24,7 @@ const siteData = {
       "location": "20483 Lakeshore Dr, Lakehead",
       "memo": "",
       "ticketLink": "",
-      "ticketText": "See you there!"
+      "ticketText": "I'll be there will you?"
     },
     {
       "date": "Sept 4",
