@@ -18,15 +18,6 @@ const siteData = {
   // or add a short message like a promo code, special note, etc.
   "gigs": [
     {
-      "date": "August 22",
-      "time": "7pm-10pm",
-      "venue": "Lakeshore Inn Resort",
-      "location": "20483 Lakeshore Dr, Lakehead",
-      "memo": "",
-      "ticketLink": "",
-      "ticketText": "I'll be there will you?"
-    },
-    {
       "date": "Sept 4",
       "time": "9:30pm-1:30am",
       "venue": "Overtime Sports Bar",
