@@ -27,6 +27,15 @@ const siteData = {
       "ticketText": "See you there!"
     },
     {
+      "date": "Sept 5",
+      "time": "7pm-10pm",
+      "venue": "Antlers Resort",
+      "location": "20679 Antlers Rd, Lakehead, CA",
+      "memo": "Labor Day weekend on the lake! 90s hits and originals!",
+      "ticketLink": "",
+      "ticketText": "See you there!"
+    },
+    {
       "date": "Sept 11",
       "time": "8pm-12am",
       "venue": "Legion Hall",
