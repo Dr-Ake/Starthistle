@@ -1,66 +1,122 @@
-// This file contains the data for your website. 
-// You can easily change image links and gig dates here without touching the HTML code.
+// StarThistle Site Data
+// Edit dates, single release details, and merch here without modifying HTML code.
 
 const siteData = {
-  // Replace these links with paths to your actual images (e.g., "images/my-band.jpg")
-  "images": {
-    "hero": "images/Main.jpeg",
-    "about": "images/About.jpg",
-    "stickerStar": "images/sticker-star.jpg",
-    "stickerRetro": "images/sticker-retro.jpg",
-    "stickerClassic": "images/sticker-classic.jpg",
-    "hatTrucker": "images/hat-trucker.jpg",
-    "tshirtClassic": "images/tshirt-classic.jpg"
+  band: {
+    name: "StarThistle",
+    tagline: "Raw. Unfiltered. StarThistle.",
+    bio: "Based in Northern California, StarThistle revives the authoritative, gritty essence of the 90s, delivering high-energy live performance across an eclectic plethora of sounds.",
+    base: "Redding, CA",
+    style: "90s Roots & Dynamic Sound",
+    bookingEmail: "starthistlenorcal@gmail.com",
+    socials: {
+      facebook: "https://www.facebook.com/starthistlenorcal",
+      instagram: "https://www.instagram.com/starthistle_norcal/",
+      spotify: "https://open.spotify.com/artist/1jkuNFxZO9LW8ENq6H98wX",
+      appleMusic: "https://music.apple.com/us/artist/starthistle/6805067422"
+    }
   },
 
-  // Add, remove, or edit your gig dates below
-  // "memo" is optional — leave it as "" to keep that space blank,
-  // or add a short message like a promo code, special note, etc.
-  "gigs": [
+  images: {
+    hero: "images/band-hero.jpg",
+    about: "images/About.jpg",
+    truck: "images/Main.jpeg",
+    logo: "images/logo.png",
+    singleCassette: "images/single-cassette.jpg",
+    stickerStar: "images/sticker-star.jpg",
+    stickerRetro: "images/sticker-retro.jpg",
+    stickerClassic: "images/sticker-classic.jpg",
+    hatTrucker: "images/hat-trucker.jpg",
+    tshirtClassic: "images/tshirt-classic.jpg"
+  },
+
+  release: {
+    title: "Hittin Rewind",
+    badge: "LATEST RELEASE",
+    subtitle: "The brand new single. Streaming now on Spotify and Apple Music.",
+    cover: "images/single-cassette.jpg",
+    spotifyUrl: "https://open.spotify.com/artist/1jkuNFxZO9LW8ENq6H98wX",
+    appleMusicUrl: "https://music.apple.com/us/artist/starthistle/6805067422"
+  },
+
+  gigs: [
     {
-      "date": "Sept 4",
-      "time": "9:30pm-1:30am",
-      "venue": "Overtime Sports Bar",
-      "location": "Win River Casino",
-      "memo": "",
-      "ticketLink": "",
-      "ticketText": "See you there!"
+      date: "Sept 4",
+      time: "9:30pm-1:30am",
+      venue: "Overtime Sports Bar",
+      location: "Win River Casino",
+      memo: "Opening weekend blowout in the casino lounge! Dynamic live sets.",
+      ticketLink: "",
+      ticketText: "See you there!"
     },
     {
-      "date": "Sept 5",
-      "time": "7pm-10pm",
-      "venue": "Antlers Resort",
-      "location": "20679 Antlers Rd, Lakehead, CA",
-      "memo": "Labor Day weekend on the lake! 90s hits and originals!",
-      "ticketLink": "",
-      "ticketText": "See you there!"
+      date: "Sept 5",
+      time: "7pm-10pm",
+      venue: "Antlers Resort",
+      location: "20679 Antlers Rd, Lakehead, CA",
+      memo: "Labor Day weekend on the lake! 90s hits and originals!",
+      ticketLink: "",
+      ticketText: "See you there!"
     },
     {
-      "date": "Sept 11",
-      "time": "8pm-12am",
-      "venue": "Legion Hall",
-      "location": "Shasta Lake City",
-      "memo": "**$5 entry, 21+ only. Get ready to rock!",
-      "ticketLink": "",
-      "ticketText": "$5 Entry"
+      date: "Sept 11",
+      time: "8pm-12am",
+      venue: "Legion Hall",
+      location: "Shasta Lake City",
+      memo: "**$5 entry, 21+ only. Get ready for a night of live music!",
+      ticketLink: "",
+      ticketText: "$5 Entry"
     },
     {
-      "date": "Sept 19",
-      "time": "9pm-1am",
-      "venue": "FireHouse Lounge",
-      "location": "Anderson",
-      "memo": "*21+ only. Let's bring the heat!",
-      "ticketLink": "",
-      "ticketText": "It's a Firehouse after all"
+      date: "Sept 19",
+      time: "9pm-1am",
+      venue: "FireHouse Lounge",
+      location: "Anderson",
+      memo: "*21+ only. Let's bring the heat!",
+      ticketLink: "",
+      ticketText: "It's a Firehouse after all"
     },
     {
-      "date": "Oct 9",
-      "time": "8pm-12am",
-      "venue": "Legion Hall",
-      "location": "Shasta Lake City",
-      "memo": "**$5 entry 21 &over",
-      "ticketLink": "",
-      "ticketText": "Don't be a stranger, come on out"
+      date: "Oct 9",
+      time: "8pm-12am",
+      venue: "Legion Hall",
+      location: "Shasta Lake City",
+      memo: "**$5 entry 21 & over",
+      ticketLink: "",
+      ticketText: "Don't be a stranger, come on out"
+    }
+  ],
+
+  merch: [
+    {
+      name: "Star-Cut Logo Sticker",
+      badge: "Star-Cut",
+      description: "A sleek, die-cut star sticker featuring the StarThistle emblem. Built from thick, weather-resistant vinyl, perfect for your car, notebook, or gear case.",
+      image: "images/sticker-star.jpg"
+    },
+    {
+      name: "Retro Neon Sticker",
+      badge: "Retro",
+      description: "Square vinyl sticker featuring our vibrant, 90s-inspired purple-and-blue gradient thistle design. Thick, durable, and ready to customize your gear.",
+      image: "images/sticker-retro.jpg"
+    },
+    {
+      name: "Classic Circle Sticker",
+      badge: "Classic",
+      description: "The traditional circular StarThistle emblem print. Perfectly sized for headstocks, backplates, amplifiers, or mic stands.",
+      image: "images/sticker-classic.jpg"
+    },
+    {
+      name: "Classic Logo Trucker Hat",
+      badge: "Headwear",
+      description: "Premium, high-crown white and black mesh snapback trucker hat. Features our circular StarThistle thistle emblem on the front. One size fits all.",
+      image: "images/hat-trucker.jpg"
+    },
+    {
+      name: "Classic Logo T-Shirt",
+      badge: "Apparel",
+      description: "Heavyweight white cotton crewneck tee featuring the large brown StarThistle thistle circular emblem printed on the back. Classic fit, available in all sizes.",
+      image: "images/tshirt-classic.jpg"
     }
   ]
 };

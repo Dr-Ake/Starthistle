@@ -3,11 +3,32 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Starthistle | Merch</title>
+    <title>StarThistle | Official Merch</title>
+    <meta name="description" content="Official StarThistle band merchandise. Available exclusively at our live shows across Northern California."/>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png"/>
+    <link rel="apple-touch-icon" href="images/logo.png"/>
+
+    <!-- Open Graph / Social Sharing Meta -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="StarThistle | Official Merch"/>
+    <meta property="og:description" content="Official StarThistle band merchandise. Available exclusively at our live shows across Northern California."/>
+    <meta property="og:image" content="images/sticker-star.jpg"/>
+
+    <!-- Twitter Card Meta -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="StarThistle | Official Merch"/>
+    <meta name="twitter:description" content="Official StarThistle band merchandise. Available exclusively at our live shows across Northern California."/>
+    <meta name="twitter:image" content="images/sticker-star.jpg"/>
+    
+    <!-- Google Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;500;700&family=Oswald:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script>
         tailwind.config = {
@@ -16,231 +37,296 @@
             extend: {
               colors: {
                 "electric-gold": "#FFD700",
-                "acid-green": "#2ECC71",
-                "primary": "#dcb8ff", 
-                "primary-container": "#2e0e4d", 
-                "background": "#131313", 
-                "surface": "#1f1f1f",
-                "surface-variant": "#353535",
-                "on-surface": "#e2e2e2",
-                "on-surface-variant": "#cdc3d0",
-                "deep-obsidian": "#0A0A0A",
+                "electric-gold-bright": "#FFE600",
+                "acid-green": "#00FF85",
+                "background": "#0a0a0a",
+                "surface": "#121212",
+                "surface-card": "#181818",
+                "surface-variant": "#222222",
+                "border-subtle": "#282828",
+                "on-surface": "#faf7ee",
+                "on-surface-muted": "#9e9e9e",
+                "cream": "#FFFDD0",
               },
               fontFamily: {
-                "headline": ["Oswald", "sans-serif"],
-                "body": ["Verdana", "Helvetica", "sans-serif"],
+                "headline": ["Oswald", "Bebas Neue", "sans-serif"],
+                "mono": ["JetBrains Mono", "monospace"],
+                "body": ["Space Grotesk", "sans-serif"],
               }
             }
           }
         }
     </script>
     <link rel="stylesheet" href="styles.css"/>
-    <style>
-        body { font-family: 'Verdana', 'Helvetica', sans-serif; }
-        h1, h2, h3, h4, h5, h6, .nav-link { font-family: 'Oswald', sans-serif; }
-        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-        #mobile-menu { display: none; }
-        #mobile-menu.active { display: flex; }
-    </style>
 </head>
-<body class="bg-background text-on-surface antialiased min-h-screen flex flex-col">
-    <!-- TopNavBar Component -->
-    <nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-4 md:px-8 py-4 bg-background border-b-2 border-primary">
-        <div class="flex items-center gap-8">
-            <a href="index.html" class="font-headline text-2xl md:text-3xl font-bold text-electric-gold tracking-tight uppercase">StarThistle</a>
-            <div class="hidden md:flex items-center gap-6">
-                <a href="index.html" class="font-headline text-xl text-on-surface hover:text-electric-gold hover:bg-surface-variant transition-colors duration-100 px-2 py-1 uppercase">Home</a>
-                <a href="about.html" class="font-headline text-xl text-on-surface hover:text-electric-gold hover:bg-surface-variant transition-colors duration-100 px-2 py-1 uppercase">About</a>
-                <a href="merch.html" class="font-headline text-xl text-electric-gold border-b-2 border-electric-gold pb-1 px-2 uppercase">Merch</a>
-                <a href="gigs.html" class="font-headline text-xl text-on-surface hover:text-electric-gold hover:bg-surface-variant transition-colors duration-100 px-2 py-1 uppercase">Gig Dates</a>
-                <a href="contact.html" class="font-headline text-xl text-on-surface hover:text-electric-gold hover:bg-surface-variant transition-colors duration-100 px-2 py-1 uppercase">Contact</a>
-            </div>
-        </div>
-        <div class="flex items-center gap-4">
-            <img src="images/logo.png" alt="StarThistle Logo" class="hidden md:block h-16 w-16 object-contain" />
-            <div class="hidden md:flex gap-4">
-                <a href="https://www.facebook.com/starthistlenorcal" target="_blank" class="text-electric-gold hover:bg-surface-variant p-2 transition-colors duration-100">
-                    <span class="material-symbols-outlined">thumb_up</span>
-                </a>
-                <a href="https://www.instagram.com/starthistle_norcal/" target="_blank" class="text-electric-gold hover:bg-surface-variant p-2 transition-colors duration-100">
-                    <span class="material-symbols-outlined">photo_camera</span>
-                </a>
-            </div>
-            <button class="md:hidden text-electric-gold p-2" onclick="document.getElementById('mobile-menu').classList.toggle('active')">
-                <span class="material-symbols-outlined text-3xl">menu</span>
-            </button>
-        </div>
-    </nav>
+<body class="bg-background text-on-surface antialiased min-h-screen flex flex-col selection:bg-electric-gold selection:text-black">
 
-    <div id="mobile-menu" class="fixed top-[74px] left-0 w-full bg-surface-variant flex-col items-center py-4 z-40 border-b-2 border-primary shadow-xl">
-        <a href="index.html" class="font-headline text-xl text-on-surface py-3 uppercase w-full text-center border-b border-surface">Home</a>
-        <a href="about.html" class="font-headline text-xl text-on-surface py-3 uppercase w-full text-center border-b border-surface">About</a>
-        <a href="merch.html" class="font-headline text-xl text-electric-gold py-3 uppercase w-full text-center border-b border-surface">Merch</a>
-        <a href="gigs.html" class="font-headline text-xl text-on-surface py-3 uppercase w-full text-center border-b border-surface">Gig Dates</a>
-        <a href="contact.html" class="font-headline text-xl text-on-surface py-3 uppercase w-full text-center border-b border-surface">Contact</a>
-    </div>
-
-    <!-- Main Canvas -->
-    <main class="flex-grow pt-32 pb-24 w-full max-w-[1400px] mx-auto px-4 md:px-8 animate-fade-in-up">
-        <div class="flex flex-col md:flex-row justify-between items-end mb-12 border-b-4 border-primary pb-4">
-            <h1 class="font-headline text-5xl md:text-7xl text-electric-gold uppercase tracking-tight hover-jitter inline-block">Merch Room</h1>
-            <p class="font-body text-acid-green text-lg mt-4 md:mt-0 font-bold animate-brutal-pulse">Support the Noise.</p>
+    <!-- Top Unified Navigation Bar -->
+    <header class="site-nav">
+        <div class="max-w-[1500px] mx-auto px-4 md:px-8 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-8 lg:gap-12">
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <span class="font-headline text-3xl md:text-4xl font-extrabold text-electric-gold tracking-tighter uppercase transition-transform group-hover:scale-105">STARTHISTLE</span>
+                </a>
+                
+                <nav class="hidden md:flex items-center gap-6 lg:gap-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="merch.html" class="nav-link active">Merch</a>
+                    <a href="gigs.html" class="nav-link">Gig Dates</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+            </div>
+            
+            <div class="flex items-center gap-4">
+                <a href="gigs.html" class="hidden sm:inline-flex btn-gold text-sm py-2 px-5">
+                    <span>Tour Dates</span>
+                </a>
+                
+                <button id="mobile-menu-btn" class="md:hidden text-electric-gold p-2 border border-border-subtle hover:border-electric-gold focus:outline-none" aria-label="Toggle navigation menu">
+                    <span class="material-symbols-outlined text-3xl">menu</span>
+                </button>
+            </div>
         </div>
         
-        <!-- Live Gig Banner -->
-        <div class="relative bg-primary-container border-2 border-primary p-8 mb-12 max-w-4xl shadow-[8px_8px_0_0_#dcb8ff] overflow-hidden group animate-fade-in-up delay-100">
-            <div class="absolute inset-0 bg-gradient-to-r from-primary-container via-surface to-deep-obsidian opacity-50 z-0"></div>
-            <div class="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#101010] border-b-2 border-border-subtle px-6 py-5 flex-col gap-4">
+            <a href="index.html" class="font-headline text-2xl text-on-surface uppercase py-2 border-b border-surface-variant hover:text-electric-gold transition-colors">Home</a>
+            <a href="about.html" class="font-headline text-2xl text-on-surface uppercase py-2 border-b border-surface-variant hover:text-electric-gold transition-colors">About</a>
+            <a href="merch.html" class="font-headline text-2xl text-electric-gold uppercase py-2 border-b border-surface-variant flex items-center justify-between">
+                <span>Merch</span>
+                <span class="material-symbols-outlined text-lg">arrow_forward</span>
+            </a>
+            <a href="gigs.html" class="font-headline text-2xl text-on-surface uppercase py-2 border-b border-surface-variant hover:text-electric-gold transition-colors">Gig Dates</a>
+            <a href="contact.html" class="font-headline text-2xl text-on-surface uppercase py-2 border-b border-surface-variant hover:text-electric-gold transition-colors">Contact</a>
+            
+            <div class="pt-2">
+                <a href="contact.html" class="btn-gold text-center w-full py-3">Book The Band</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Canvas -->
+    <main class="flex-grow pt-28 pb-24 max-w-[1500px] mx-auto px-4 md:px-8 w-full">
+        
+        <!-- Page Header -->
+        <div class="mb-10 animate-fade-in-up">
+            <div class="flex items-start gap-4">
+                <div class="w-2.5 h-16 sm:h-20 bg-electric-gold shadow-[0_0_12px_rgba(255,215,0,0.6)]"></div>
                 <div>
-                    <h2 class="font-headline text-3xl md:text-4xl text-electric-gold uppercase mb-2 tracking-wide">
-                        Available Exclusively at Our Gigs
-                    </h2>
-                    <p class="font-body text-base text-on-surface-variant max-w-2xl leading-relaxed">
-                        Like what you see? All of our official gear and merchandise is sold <strong class="text-white">exclusively in person at our live shows</strong>. 
-                        Come out to support the noise, hang with the band, and grab some fresh gear directly from the source!
+                    <h1 class="font-headline text-6xl sm:text-7xl md:text-8xl text-white font-extrabold uppercase tracking-tight leading-none">
+                        MERCH
+                    </h1>
+                    <p class="font-mono text-xs sm:text-sm text-on-surface-muted uppercase tracking-widest mt-2">
+                        OFFICIAL BAND GEAR • AVAILABLE EXCLUSIVELY AT LIVE SHOWS
                     </p>
                 </div>
+            </div>
+        </div>
+
+        <!-- Live Show Merch Banner (From Original Site) -->
+        <section class="brutalist-card-featured p-8 md:p-10 mb-14 animate-fade-in-up delay-100 relative overflow-hidden">
+            <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 relative z-10">
+                <div class="max-w-3xl">
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="w-2 h-2 rounded-full bg-acid-green animate-ping"></span>
+                        <span class="font-mono text-xs text-acid-green font-bold uppercase tracking-widest">In-Person Only</span>
+                    </div>
+                    <h2 class="font-headline text-3xl sm:text-4xl md:text-5xl text-electric-gold uppercase font-extrabold tracking-tight mb-3">
+                        AVAILABLE EXCLUSIVELY AT OUR GIGS
+                    </h2>
+                    <p class="font-mono text-sm md:text-base text-on-surface leading-relaxed">
+                        All official StarThistle merchandise is sold in person at our live shows. Come out to support the noise, hang with the band, and grab fresh gear directly from the source!
+                    </p>
+                </div>
+
                 <div class="shrink-0">
-                    <a href="gigs.html" class="inline-flex items-center gap-2 bg-electric-gold text-background font-headline text-xl uppercase px-6 py-3 border-2 border-electric-gold hover:bg-background hover:text-electric-gold transition-all duration-200 hover-jitter">
+                    <a href="gigs.html" class="btn-gold py-3.5 px-8 text-lg font-bold uppercase tracking-wider inline-flex items-center gap-2 hover-jitter">
                         <span>Find A Show</span>
                         <span class="material-symbols-outlined">event</span>
                     </a>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 animate-fade-in-up delay-200">
-            <!-- Star-Cut Logo Sticker -->
-            <div class="bg-surface border-2 border-surface-variant p-6 hover:border-electric-gold transition-all duration-300 group flex flex-col justify-between">
+        <!-- Product Grid (Only the 5 Authentic Items from Original Code) -->
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 animate-fade-in-up delay-200">
+            
+            <!-- Item 1: Star-Cut Logo Sticker -->
+            <div class="brutalist-card p-6 flex flex-col justify-between group hover:border-electric-gold transition-colors">
                 <div>
-                    <div class="w-full aspect-square bg-deep-obsidian mb-6 flex items-center justify-center overflow-hidden border border-surface-variant group-hover:border-electric-gold relative">
-                        <span class="material-symbols-outlined text-[100px] text-surface-variant group-hover:text-electric-gold transition-colors absolute z-0">sticky_note_2</span>
-                        <img id="merch-sticker-star" src="images/sticker-star.jpg" class="w-full h-full object-cover relative z-10 group-hover:scale-105 transition-transform duration-500" alt="Star-Cut Logo Sticker">
-                        <span class="absolute top-3 right-3 bg-electric-gold text-background px-3 py-1 font-headline text-sm uppercase tracking-wider font-bold z-20">Star-Cut</span>
+                    <div class="w-full aspect-square bg-black mb-6 flex items-center justify-center overflow-hidden border border-border-subtle group-hover:border-electric-gold transition-colors relative">
+                        <img src="images/sticker-star.jpg" alt="Star-Cut Logo Sticker" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                        <span class="absolute top-3 right-3 bg-electric-gold text-black px-3 py-1 font-mono text-xs uppercase font-bold tracking-wider z-10">
+                            Star-Cut
+                        </span>
                     </div>
-                    <h3 class="font-headline text-2xl text-on-surface uppercase mb-2">Star-Cut Logo Sticker</h3>
-                    <p class="font-body text-sm text-on-surface-variant leading-relaxed mb-4">
-                        A sleek, die-cut star sticker featuring the StarThistle emblem. Built from thick, weather-resistant vinyl—perfect for your car, notebook, or flight case.
+
+                    <h3 class="font-headline text-2xl md:text-3xl text-white uppercase font-bold tracking-wide mb-2 group-hover:text-electric-gold transition-colors">
+                        Star-Cut Logo Sticker
+                    </h3>
+
+                    <p class="font-mono text-sm text-on-surface-muted leading-relaxed mb-6">
+                        A sleek, die-cut star sticker featuring the StarThistle emblem. Built from thick, weather-resistant vinyl, perfect for your car, notebook, or gear case.
                     </p>
                 </div>
-                <div class="pt-4 border-t border-surface-variant flex items-center justify-between">
-                    <span class="font-headline text-sm uppercase text-electric-gold tracking-widest">Get it live</span>
-                    <span class="material-symbols-outlined text-electric-gold">local_activity</span>
+
+                <div class="pt-4 border-t border-border-subtle flex items-center justify-between">
+                    <a href="gigs.html" class="font-mono text-xs uppercase text-electric-gold tracking-widest font-bold inline-flex items-center gap-1.5 hover:underline">
+                        <span>Get it live</span>
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
+                    <span class="material-symbols-outlined text-on-surface-muted text-xl">local_activity</span>
                 </div>
             </div>
 
-            <!-- Retro Neon Sticker -->
-            <div class="bg-surface border-2 border-surface-variant p-6 hover:border-primary transition-all duration-300 group flex flex-col justify-between">
+            <!-- Item 2: Retro Neon Sticker -->
+            <div class="brutalist-card p-6 flex flex-col justify-between group hover:border-acid-green transition-colors">
                 <div>
-                    <div class="w-full aspect-square bg-deep-obsidian mb-6 flex items-center justify-center overflow-hidden border border-surface-variant group-hover:border-primary relative">
-                        <span class="material-symbols-outlined text-[100px] text-surface-variant group-hover:text-primary transition-colors absolute z-0">sticky_note_2</span>
-                        <img id="merch-sticker-retro" src="images/sticker-retro.jpg" class="w-full h-full object-cover relative z-10 group-hover:scale-105 transition-transform duration-500" alt="Retro Neon Sticker">
-                        <span class="absolute top-3 right-3 bg-primary text-background px-3 py-1 font-headline text-sm uppercase tracking-wider font-bold z-20">Retro</span>
+                    <div class="w-full aspect-square bg-black mb-6 flex items-center justify-center overflow-hidden border border-border-subtle group-hover:border-acid-green transition-colors relative">
+                        <img src="images/sticker-retro.jpg" alt="Retro Neon Sticker" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                        <span class="absolute top-3 right-3 bg-acid-green text-black px-3 py-1 font-mono text-xs uppercase font-bold tracking-wider z-10">
+                            Retro
+                        </span>
                     </div>
-                    <h3 class="font-headline text-2xl text-on-surface uppercase mb-2">Retro Neon Sticker</h3>
-                    <p class="font-body text-sm text-on-surface-variant leading-relaxed mb-4">
-                        Square vinyl sticker featuring our vibrant, 90s-inspired purple-and-blue gradient thistle design. Thick, durable, and ready to customize your guitar case.
+
+                    <h3 class="font-headline text-2xl md:text-3xl text-white uppercase font-bold tracking-wide mb-2 group-hover:text-acid-green transition-colors">
+                        Retro Neon Sticker
+                    </h3>
+
+                    <p class="font-mono text-sm text-on-surface-muted leading-relaxed mb-6">
+                        Square vinyl sticker featuring our vibrant, 90s-inspired purple-and-blue gradient thistle design. Thick, durable, and ready to customize your gear.
                     </p>
                 </div>
-                <div class="pt-4 border-t border-surface-variant flex items-center justify-between">
-                    <span class="font-headline text-sm uppercase text-primary tracking-widest">Get it live</span>
-                    <span class="material-symbols-outlined text-primary">local_activity</span>
+
+                <div class="pt-4 border-t border-border-subtle flex items-center justify-between">
+                    <a href="gigs.html" class="font-mono text-xs uppercase text-acid-green tracking-widest font-bold inline-flex items-center gap-1.5 hover:underline">
+                        <span>Get it live</span>
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
+                    <span class="material-symbols-outlined text-on-surface-muted text-xl">local_activity</span>
                 </div>
             </div>
 
-            <!-- Classic Circle Sticker -->
-            <div class="bg-surface border-2 border-surface-variant p-6 hover:border-acid-green transition-all duration-300 group flex flex-col justify-between">
+            <!-- Item 3: Classic Circle Sticker -->
+            <div class="brutalist-card p-6 flex flex-col justify-between group hover:border-electric-gold transition-colors">
                 <div>
-                    <div class="w-full aspect-square bg-deep-obsidian mb-6 flex items-center justify-center overflow-hidden border border-surface-variant group-hover:border-acid-green relative">
-                        <span class="material-symbols-outlined text-[100px] text-surface-variant group-hover:text-acid-green transition-colors absolute z-0">sticky_note_2</span>
-                        <img id="merch-sticker-classic" src="images/sticker-classic.jpg" class="w-full h-full object-cover relative z-10 group-hover:scale-105 transition-transform duration-500" alt="Classic Circle Sticker">
-                        <span class="absolute top-3 right-3 bg-acid-green text-background px-3 py-1 font-headline text-sm uppercase tracking-wider font-bold z-20">Classic</span>
+                    <div class="w-full aspect-square bg-black mb-6 flex items-center justify-center overflow-hidden border border-border-subtle group-hover:border-electric-gold transition-colors relative">
+                        <img src="images/sticker-classic.jpg" alt="Classic Circle Sticker" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                        <span class="absolute top-3 right-3 bg-electric-gold text-black px-3 py-1 font-mono text-xs uppercase font-bold tracking-wider z-10">
+                            Classic
+                        </span>
                     </div>
-                    <h3 class="font-headline text-2xl text-on-surface uppercase mb-2">Classic Circle Sticker</h3>
-                    <p class="font-body text-sm text-on-surface-variant leading-relaxed mb-4">
+
+                    <h3 class="font-headline text-2xl md:text-3xl text-white uppercase font-bold tracking-wide mb-2 group-hover:text-electric-gold transition-colors">
+                        Classic Circle Sticker
+                    </h3>
+
+                    <p class="font-mono text-sm text-on-surface-muted leading-relaxed mb-6">
                         The traditional circular StarThistle emblem print. Perfectly sized for headstocks, backplates, amplifiers, or mic stands.
                     </p>
                 </div>
-                <div class="pt-4 border-t border-surface-variant flex items-center justify-between">
-                    <span class="font-headline text-sm uppercase text-acid-green tracking-widest">Get it live</span>
-                    <span class="material-symbols-outlined text-acid-green">local_activity</span>
+
+                <div class="pt-4 border-t border-border-subtle flex items-center justify-between">
+                    <a href="gigs.html" class="font-mono text-xs uppercase text-electric-gold tracking-widest font-bold inline-flex items-center gap-1.5 hover:underline">
+                        <span>Get it live</span>
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
+                    <span class="material-symbols-outlined text-on-surface-muted text-xl">local_activity</span>
                 </div>
             </div>
 
-            <!-- Classic Logo Trucker Hat -->
-            <div class="bg-surface border-2 border-surface-variant p-6 hover:border-primary transition-all duration-300 group flex flex-col justify-between">
+            <!-- Item 4: Classic Logo Trucker Hat -->
+            <div class="brutalist-card p-6 flex flex-col justify-between group hover:border-electric-gold transition-colors">
                 <div>
-                    <div class="w-full aspect-square bg-deep-obsidian mb-6 flex items-center justify-center overflow-hidden border border-surface-variant group-hover:border-primary relative">
-                        <span class="material-symbols-outlined text-[100px] text-surface-variant group-hover:text-primary transition-colors absolute z-0">apparel</span>
-                        <img id="merch-hat-trucker" src="images/hat-trucker.jpg" class="w-full h-full object-cover relative z-10 group-hover:scale-105 transition-transform duration-500" alt="Classic Logo Trucker Hat">
-                        <span class="absolute top-3 right-3 bg-primary text-background px-3 py-1 font-headline text-sm uppercase tracking-wider font-bold z-20">Headwear</span>
+                    <div class="w-full aspect-square bg-black mb-6 flex items-center justify-center overflow-hidden border border-border-subtle group-hover:border-electric-gold transition-colors relative">
+                        <img src="images/hat-trucker.jpg" alt="Classic Logo Trucker Hat" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                        <span class="absolute top-3 right-3 bg-electric-gold text-black px-3 py-1 font-mono text-xs uppercase font-bold tracking-wider z-10">
+                            Headwear
+                        </span>
                     </div>
-                    <h3 class="font-headline text-2xl text-on-surface uppercase mb-2">Classic Logo Trucker Hat</h3>
-                    <p class="font-body text-sm text-on-surface-variant leading-relaxed mb-4">
+
+                    <h3 class="font-headline text-2xl md:text-3xl text-white uppercase font-bold tracking-wide mb-2 group-hover:text-electric-gold transition-colors">
+                        Classic Logo Trucker Hat
+                    </h3>
+
+                    <p class="font-mono text-sm text-on-surface-muted leading-relaxed mb-6">
                         Premium, high-crown white and black mesh snapback trucker hat. Features our circular StarThistle thistle emblem on the front. One size fits all.
                     </p>
                 </div>
-                <div class="pt-4 border-t border-surface-variant flex items-center justify-between">
-                    <span class="font-headline text-sm uppercase text-primary tracking-widest">Get it live</span>
-                    <span class="material-symbols-outlined text-primary">local_activity</span>
+
+                <div class="pt-4 border-t border-border-subtle flex items-center justify-between">
+                    <a href="gigs.html" class="font-mono text-xs uppercase text-electric-gold tracking-widest font-bold inline-flex items-center gap-1.5 hover:underline">
+                        <span>Get it live</span>
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
+                    <span class="material-symbols-outlined text-on-surface-muted text-xl">local_activity</span>
                 </div>
             </div>
 
-            <!-- Classic Logo T-Shirt -->
-            <div class="bg-surface border-2 border-surface-variant p-6 hover:border-electric-gold transition-all duration-300 group flex flex-col justify-between">
+            <!-- Item 5: Classic Logo T-Shirt -->
+            <div class="brutalist-card p-6 flex flex-col justify-between group hover:border-electric-gold transition-colors">
                 <div>
-                    <div class="w-full aspect-square bg-deep-obsidian mb-6 flex items-center justify-center overflow-hidden border border-surface-variant group-hover:border-electric-gold relative">
-                        <span class="material-symbols-outlined text-[100px] text-surface-variant group-hover:text-electric-gold transition-colors absolute z-0">checkroom</span>
-                        <img id="merch-tshirt-classic" src="images/tshirt-classic.jpg" class="w-full h-full object-cover relative z-10 group-hover:scale-105 transition-transform duration-500" alt="Classic Logo T-Shirt">
-                        <span class="absolute top-3 right-3 bg-electric-gold text-background px-3 py-1 font-headline text-sm uppercase tracking-wider font-bold z-20">Apparel</span>
+                    <div class="w-full aspect-square bg-black mb-6 flex items-center justify-center overflow-hidden border border-border-subtle group-hover:border-electric-gold transition-colors relative">
+                        <img src="images/tshirt-classic.jpg" alt="Classic Logo T-Shirt" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                        <span class="absolute top-3 right-3 bg-electric-gold text-black px-3 py-1 font-mono text-xs uppercase font-bold tracking-wider z-10">
+                            Apparel
+                        </span>
                     </div>
-                    <h3 class="font-headline text-2xl text-on-surface uppercase mb-2">Classic Logo T-Shirt</h3>
-                    <p class="font-body text-sm text-on-surface-variant leading-relaxed mb-4">
+
+                    <h3 class="font-headline text-2xl md:text-3xl text-white uppercase font-bold tracking-wide mb-2 group-hover:text-electric-gold transition-colors">
+                        Classic Logo T-Shirt
+                    </h3>
+
+                    <p class="font-mono text-sm text-on-surface-muted leading-relaxed mb-6">
                         Heavyweight white cotton crewneck tee featuring the large brown StarThistle thistle circular emblem printed on the back. Classic fit, available in all sizes.
                     </p>
                 </div>
-                <div class="pt-4 border-t border-surface-variant flex items-center justify-between">
-                    <span class="font-headline text-sm uppercase text-electric-gold tracking-widest">Get it live</span>
-                    <span class="material-symbols-outlined text-electric-gold">local_activity</span>
+
+                <div class="pt-4 border-t border-border-subtle flex items-center justify-between">
+                    <a href="gigs.html" class="font-mono text-xs uppercase text-electric-gold tracking-widest font-bold inline-flex items-center gap-1.5 hover:underline">
+                        <span>Get it live</span>
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
+                    <span class="material-symbols-outlined text-on-surface-muted text-xl">local_activity</span>
                 </div>
             </div>
-        </div>
+
+        </section>
     </main>
 
-    <!-- Footer Component -->
-    <footer class="w-full py-12 px-4 md:px-8 flex flex-col md:flex-row justify-between items-center gap-8 bg-deep-obsidian border-t-4 border-primary-container mt-auto">
-        <div class="flex flex-col gap-2 items-center md:items-start">
-            <span class="font-headline text-3xl text-primary uppercase">StarThistle</span>
-            <p class="font-body text-sm text-on-surface-variant">© 2025 StarThistle. Redding, CA.</p>
-        </div>
-        <div class="flex flex-wrap gap-6 items-center justify-center">
-            <a href="https://www.facebook.com/starthistlenorcal" class="font-headline text-lg text-on-surface-variant hover:text-acid-green transition-colors uppercase">Facebook</a>
-            <a href="https://www.instagram.com/starthistle_norcal/" class="font-headline text-lg text-on-surface-variant hover:text-acid-green transition-colors uppercase">Instagram</a>
-            <a href="contact.html" class="font-headline text-lg text-electric-gold hover:text-acid-green transition-colors uppercase">Contact</a>
+    <!-- Unified Footer Component -->
+    <footer class="w-full py-12 px-4 md:px-8 bg-[#070707] border-t-2 border-border-subtle mt-auto">
+        <div class="max-w-[1500px] mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex flex-col items-center md:items-start gap-2">
+                <span class="font-headline text-3xl font-black text-white uppercase tracking-tight">STARTHISTLE</span>
+                <p class="font-mono text-xs text-on-surface-muted tracking-wider">
+                    © 2025 STARTHISTLE. ALL RIGHTS RESERVED. REDDING, CA.
+                </p>
+            </div>
+
+            <div class="flex flex-wrap gap-6 items-center justify-center font-mono text-xs uppercase tracking-widest">
+                <a href="https://www.facebook.com/starthistlenorcal" target="_blank" rel="noopener noreferrer" class="text-on-surface-muted hover:text-electric-gold transition-colors">Facebook</a>
+                <a href="https://www.instagram.com/starthistle_norcal/" target="_blank" rel="noopener noreferrer" class="text-on-surface-muted hover:text-acid-green transition-colors">Instagram</a>
+                <a href="https://open.spotify.com/artist/1jkuNFxZO9LW8ENq6H98wX" target="_blank" rel="noopener noreferrer" class="text-on-surface-muted hover:text-electric-gold transition-colors">Spotify</a>
+                <a href="https://music.apple.com/us/artist/starthistle/6805067422" target="_blank" rel="noopener noreferrer" class="text-on-surface-muted hover:text-electric-gold transition-colors">Apple Music</a>
+                <a href="gigs.html" class="text-on-surface-muted hover:text-white transition-colors">Gig Dates</a>
+                <a href="contact.html" class="text-electric-gold hover:text-acid-green transition-colors">Booking</a>
+            </div>
         </div>
     </footer>
 
+    <!-- Mobile Nav Script -->
     <script src="data.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            if (siteData && siteData.images) {
-                const mappings = {
-                    'merch-sticker-star': siteData.images.stickerStar,
-                    'merch-sticker-retro': siteData.images.stickerRetro,
-                    'merch-sticker-classic': siteData.images.stickerClassic,
-                    'merch-hat-trucker': siteData.images.hatTrucker,
-                    'merch-tshirt-classic': siteData.images.tshirtClassic
-                };
-                for (const [id, url] of Object.entries(mappings)) {
-                    const imgEl = document.getElementById(id);
-                    if (imgEl && url) {
-                        imgEl.src = url;
-                    } else if (imgEl) {
-                        imgEl.style.display = 'none'; // Hide image if no URL provided, showing icon underneath
-                    }
-                }
-            }
-        });
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('flex');
+            });
+        }
     </script>
 </body>
 </html>
