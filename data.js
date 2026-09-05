@@ -84,6 +84,15 @@ const siteData = {
       memo: "**$5 entry 21 & over",
       ticketLink: "",
       ticketText: "Don't be a stranger, come on out"
+    },
+    {
+      date: "Nov 13",
+      time: "8pm-Late",
+      venue: "Stage 7",
+      location: "3210 W Center St, Anderson, CA 96007",
+      memo: "Punk Rock Revival! The North & StarThistle unite for one epic night of rock. *21 & over.",
+      ticketLink: "",
+      ticketText: "$10 Entry"
     }
   ],
 
