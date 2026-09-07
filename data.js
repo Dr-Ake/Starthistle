@@ -41,15 +41,6 @@ const siteData = {
 
   gigs: [
     {
-      date: "Sept 11",
-      time: "8pm-12am",
-      venue: "Legion Hall",
-      location: "Shasta Lake City",
-      memo: "**$5 entry, 21+ only. Get ready for a night of live music!",
-      ticketLink: "",
-      ticketText: "$5 Entry"
-    },
-    {
       date: "Sept 19",
       time: "9pm-1am",
       venue: "FireHouse Lounge",
