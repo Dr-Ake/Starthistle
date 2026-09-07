@@ -75,6 +75,15 @@ const siteData = {
       memo: "Punk Rock Revival! The North & StarThistle unite for one epic night of rock. *21 & over.",
       ticketLink: "",
       ticketText: "$10 Entry"
+    },
+    {
+      date: "May 29, 2027",
+      time: "7pm-10pm",
+      venue: "Antlers Resort",
+      location: "20679 Antlers Rd, Lakehead, CA",
+      memo: "Memorial Day weekend on the lake! 90s hits and originals!",
+      ticketLink: "",
+      ticketText: "See you there!"
     }
   ],
 
