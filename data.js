@@ -50,6 +50,15 @@ const siteData = {
       ticketText: "It's a Firehouse after all"
     },
     {
+      date: "Sept 26",
+      time: "8pm-12am",
+      venue: "Stage 7 at VFW Hall",
+      location: "3210 W Center St, Anderson, CA",
+      memo: "Doors open 7:30pm. *21 & over.",
+      ticketLink: "",
+      ticketText: "$5 Entry (Cash Only)"
+    },
+    {
       date: "Oct 9",
       time: "8pm-12am",
       venue: "Legion Hall",
