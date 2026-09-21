@@ -41,15 +41,6 @@ const siteData = {
 
   gigs: [
     {
-      date: "Sept 19",
-      time: "9pm-1am",
-      venue: "FireHouse Lounge",
-      location: "Anderson",
-      memo: "*21+ only. Let's bring the heat!",
-      ticketLink: "",
-      ticketText: "It's a Firehouse after all"
-    },
-    {
       date: "Sept 26",
       time: "8pm-12am",
       venue: "Stage 7 at VFW Hall",
