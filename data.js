@@ -68,6 +68,15 @@ const siteData = {
       ticketText: "$10 Entry"
     },
     {
+      date: "Nov 21",
+      time: "9pm-1am",
+      venue: "Firehouse Lounge",
+      location: "2905 E Center St, Anderson, CA 96007",
+      memo: "90's hits and originals!",
+      ticketLink: "",
+      ticketText: "Free Entry"
+    },
+    {
       date: "May 29, 2027",
       time: "7pm-10pm",
       venue: "Antlers Resort",
