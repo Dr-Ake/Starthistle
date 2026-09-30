@@ -50,6 +50,15 @@ const siteData = {
       ticketText: "Don't be a stranger, come on out"
     },
     {
+      date: "Oct 18",
+      time: "1-3pm & 6-8pm",
+      venue: "Halloween Carnival",
+      location: "Clair Engle Park, Shasta Lake, CA",
+      memo: "5th Annual Shasta Lake Halloween Carnival! Live music 1-3pm & 6-8pm. Costume contest with prizes, food trucks, games & raffle.",
+      ticketLink: "",
+      ticketText: "Free Entry"
+    },
+    {
       date: "Nov 13",
       time: "8pm-Late",
       venue: "Stage 7",
