@@ -36,6 +36,16 @@ h1, h2, h3, h4, h5, h6, .font-headline {
   font-family: 'JetBrains Mono', monospace;
 }
 
+.footer-easter-egg {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-easter-egg:focus-visible {
+  outline: 1px solid var(--electric-gold);
+  outline-offset: 4px;
+}
+
 /* Gritty subtle background texture */
 .bg-grid-dots {
   background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
