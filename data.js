@@ -45,7 +45,7 @@ const siteData = {
       time: "8pm-12am",
       venue: "Legion Hall",
       location: "Shasta Lake City",
-      memo: "**$5 entry 21 & over",
+      memo: "$5 entry, cash bar! *21 & over",
       ticketLink: "",
       ticketText: "Don't be a stranger, come on out"
     },
@@ -66,6 +66,15 @@ const siteData = {
       memo: "Punk Rock Revival! The North & StarThistle unite for one epic night of rock. *21 & over.",
       ticketLink: "",
       ticketText: "$10 Entry"
+    },
+    {
+      date: "Nov 14",
+      time: "6pm-9:30pm",
+      venue: "The Park",
+      location: "Downtown Redding, CA",
+      memo: "Food truck park, free entry!",
+      ticketLink: "",
+      ticketText: "Free Entry"
     },
     {
       date: "Nov 21",
