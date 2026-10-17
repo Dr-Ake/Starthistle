@@ -41,15 +41,6 @@ const siteData = {
 
   gigs: [
     {
-      date: "Oct 9",
-      time: "8pm-12am",
-      venue: "Legion Hall",
-      location: "Shasta Lake City",
-      memo: "$5 entry, cash bar! *21 & over",
-      ticketLink: "",
-      ticketText: "Don't be a stranger, come on out"
-    },
-    {
       date: "Oct 18",
       time: "1-3pm & 6-8pm",
       venue: "Halloween Carnival",
