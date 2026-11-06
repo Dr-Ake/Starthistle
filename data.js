@@ -68,6 +68,15 @@ const siteData = {
       ticketText: "Free Entry"
     },
     {
+      date: "Dec 5",
+      time: "4:30pm-6pm",
+      venue: "Celtic Christmas",
+      location: "Whistlestop Park, Downtown Redding, CA",
+      memo: "Come hear us play a festive set for this vendor fair in support of local recovery programs and parents of children with unique needs.",
+      ticketLink: "",
+      ticketText: "See you there!"
+    },
+    {
       date: "May 29, 2027",
       time: "7pm-10pm",
       venue: "Antlers Resort",
