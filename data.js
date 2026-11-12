@@ -50,15 +50,6 @@ const siteData = {
       ticketText: "$10 Entry"
     },
     {
-      date: "Nov 14",
-      time: "6pm-9:30pm",
-      venue: "The Park",
-      location: "Downtown Redding, CA",
-      memo: "Food truck park, free entry!",
-      ticketLink: "",
-      ticketText: "Free Entry"
-    },
-    {
       date: "Nov 21",
       time: "9pm-1am",
       venue: "Firehouse Lounge",
