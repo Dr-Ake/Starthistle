@@ -41,15 +41,6 @@ const siteData = {
 
   gigs: [
     {
-      date: "Nov 13",
-      time: "8pm-Late",
-      venue: "Stage 7",
-      location: "3210 W Center St, Anderson, CA 96007",
-      memo: "Punk Rock Revival! The North & StarThistle unite for one epic night of rock. *21 & over.",
-      ticketLink: "",
-      ticketText: "$10 Entry"
-    },
-    {
       date: "Nov 21",
       time: "9pm-1am",
       venue: "Firehouse Lounge",
